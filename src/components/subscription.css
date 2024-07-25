@@ -1,0 +1,101 @@
+.subscription{
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+    gap: 10px;
+}
+.scard{
+    background-color: #22262c;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 24px 24px 24px;
+    width: 300px;
+}
+.scard ul {
+    color: #bc1e4a;
+}
+.scard ul li span {
+    color: #707376;
+}
+.starter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scard h3 span {
+    font-size: small;
+}
+.scard select {
+    background-color: #22262c;
+    color: #7e8083;
+    padding: 10px;
+    width: 150px;
+}
+.scard button {
+    margin-left: 15px;
+    padding: 10px 20px;
+    background-color: #22262c;
+    color: #c1c2c4;
+    border: 1px solid #bc1e4a;
+    width: 200px;
+    cursor: pointer;
+}
+.scard button:hover{
+    background-color: #bc1e4a;
+}
+.custom-switch-label{
+    color: #707376;
+}
+.custom-switch .custom-control-input:checked + .custom-control-label::before {
+    background-color: #bc1e4a;; /* Change to light pink when checked */
+  }
+  .bill {
+    display: flex;
+    color: #707376;
+    gap: 5px;
+  }
+.mother{
+    background-color: #191b1d;
+    height: 100vh;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top h3 {
+    color: white;
+}
+.topButton {
+    background-color: #bc1e4a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: normal;
+    width: 200px;
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+    .subscription{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mother {
+        height: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for medium screens go here */
+    .subscription{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mother {
+        height: 100%;
+    }
+  }
+
